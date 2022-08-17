@@ -6,13 +6,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "4.26.0"
     }
-
-    random = {
-      source  = "hashicorp/random"
-      version = "3.3.2"
-    }
   }
-
 }
 
 
@@ -21,3 +15,9 @@ provider "aws" {
   #Inserir o profile caso não queira usar o default
 }
 
+resource "aws_instance" "web" {
+  ami           = var.instance_ami
+  instance_type = var.instance_type
+
+  tags = var.instance_tags
+}
