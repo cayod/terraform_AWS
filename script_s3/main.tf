@@ -3,16 +3,16 @@ terraform {
 
   required_providers {
     aws = {
-        source = "hashcorp/aws"
-        version = "4.26.0"
+      source  = "hashicorp/aws"
+      version = "4.26.0"
     }
   }
 }
 
 
 provider "aws" {
-    region = "sa-east-1"
-    #Inserir o profile caso não queira usar o default
+  region = "sa-east-1"
+  #Inserir o profile caso não queira usar o default
 }
 
 
@@ -22,7 +22,9 @@ resource "aws_s3_bucket" "test-bucket" {
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
-    Managedby = "Terraform"
+    ManagedBy   = "Terraform"
+    Owner       = "Cayo Dias"
+    UpdatedAt   = "2022-08-17"
   }
 }
 

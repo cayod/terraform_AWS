@@ -14,3 +14,15 @@ Para setar as variaveis de ambiente sem deixar as informações no código
 
     AWS_ACCESS_KEY_ID={inserir access key} AWS_SECRET_ACCESS_KEY={inserir} terraform apply
 
+Para validar o código
+
+    terraform validate
+
+Para formatar o arquivono padrão
+
+    terraform fmt
+
+Para destruir o terrafor
+
+    terraform destroy
+    
