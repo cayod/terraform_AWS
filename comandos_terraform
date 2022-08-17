@@ -1,0 +1,16 @@
+Após terminar o arquivo .tf é necessário utilizar o comando
+para ser feito o arquivo terraform
+    terraform init
+
+Após a criação para verificar o fluxo que será feito no terraform
+
+    terraform plan
+
+Comando para iniar o fluxo
+
+    terraform apply
+
+Para setar as variaveis de ambiente sem deixar as informações no código
+
+    AWS_ACCESS_KEY_ID={inserir access key} AWS_SECRET_ACCESS_KEY={inserir} terraform apply
+

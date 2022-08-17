@@ -1,0 +1,11 @@
+
+
+Para vizualizar as versões do terraform
+
+    tfenv list
+
+Selecionar a versão que será utilizada
+
+    tfenv use {versão}
+
+    
