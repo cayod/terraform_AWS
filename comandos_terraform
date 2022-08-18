@@ -54,3 +54,12 @@ A ordem de importancia das variaveis vai de cima para baixo
     - *.auto.tfvars ou *.auto.tfvars.json
     - -var ou -var-file na linha de comando
 
+
+
+----------------------------------------------
+
+terraform remote state
+
+Para realizar a configuração do backend por meio de um arquivo .hcl
+
+    terraform init -backend=true -backend-config="{nomedo arquivo .hcl}"
