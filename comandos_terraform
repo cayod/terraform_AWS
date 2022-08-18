@@ -26,6 +26,21 @@ Para destruir o terrafor
 
     terraform destroy
 
+Para apresentar o estado do terraform
+
+    terraform show
+
+Para acessar as informações de cada atributo e recursos
+
+    terraform console
+
+        {inserir o nome do atributo para pesquisar}
+
+Utilizando o import pelo site do terraform registry é necessário utilizar o
+comando do site e inserir o nome do bucket para importar as informações dele
+para nosso arquivo .tfstate
+
+    ex: terraform import aws_s3_bucket.bucket {bucket_name}
 
 -------------------------------------------
 
@@ -38,3 +53,4 @@ A ordem de importancia das variaveis vai de cima para baixo
     - terraform.tfvars.json
     - *.auto.tfvars ou *.auto.tfvars.json
     - -var ou -var-file na linha de comando
+

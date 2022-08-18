@@ -1,6 +1,8 @@
 locals {
 
-    common_tags = {
+  ips_file_path = "ips.json"
+
+  common_tags = {
     Service = "Teste Terraform"
 
     ManagedBy = "Terraform"
